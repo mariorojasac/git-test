@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Enter Your Details For Our Dating Website</h1>
+  <form action="https://us-central1-nucamp-production.cloudfunctions.net/post/formdata" method="post" enctype="multi-part/formdata">
+    <fieldset>
+      <legend>Your Face</legend>
+      <div>
+        <label for="your photo" >your photo</label>
+        <input type="file" id="your photo" name="your photo" />
+      </div>
+      <p>Image Preview</p>
+      <img id="preview" width= "500px" />
+    </fieldset>
+    <fieldset>
+      <legend>Your Details</legend>
+      <div>
+        <label for="Name"> Name</label>
+        <input type="text" id="name" name="name" placeholder="Your full name">
+      </div>
+      <div>
+        <legend>Gender</legend>  
+          <input type="radio" id="woman" name="gender" value="woman">
+          <label for="woman">woman</label>
+          <input type="radio" id="man" name="gender" value="man">
+          <label for="man">man</label>
+          <input type="radio" id="non-binary" name="gender" value="non-binary">
+          <label for="non-binary">non-binary</label>
+         </div>
+         <div>
+             <legend>Salary</legend>
+             <label for="salary"></label>
+         </div>
+      </div>
+      <div>
+        <legend>Age</legend>
+        <input type="number" id="Age" name="Age" placeholder="Age">
+        <label for="Age">Age</label>
+      </div>
+      <div>
+        <legend>Date of Birth</legend>
+        <label for="dob">Date of Birth</label>
+           <input type="date" id="dob" name="dob" value="dob">
+      </div>
+      <div>
+        <legend>Favorite Color</legend>
+        <label for="color">Favorite Color</label>
+        <input type="color" id="color" name="color" value="color">
+      </div>
+      <div>
+        <legend>Country</legend>
+        <label for="Country">Country</label>
+        <input type="option" id="Country" name="Country" value="Country">
+        <input type="option" id="brazil" name="Country" value="brazil">
+        <label for="brazil">brazil</option> 
+        <input type="option" id="france" name="Country" value="france">
+        <label for="france">france</label>
+        <input type="option" id="japan" name="japan" value="japan">
+        <label for="japan">japan</label>
+      </div>
+    </fieldset>
+  </form>
+  <script>
+   </script>
+</body>
+</html>
